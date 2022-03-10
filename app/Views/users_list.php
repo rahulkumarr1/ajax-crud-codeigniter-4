@@ -2,7 +2,7 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 
 <div class="container">
-    <h3>User List</h3><br>
+    <h3>Manage User List</h3><br>
     <div class="row">
 
         <div class="col-md-12">
@@ -28,11 +28,11 @@
     </div><br>
 
     <script>
-        $(window.document).on('click', '.delete-banner', function() {
+        $(window.document).on('click', '.delete-user', function() {
             var userId = $(this).attr('data-user');
             if (confirm('Are you sure to delete this item ?')) {
                 $.ajax({
-                    url: "<?= base_url(route_to('banner_remove')) ?>",
+                    url: "<?= base_url(route_to('delete-user')) ?>",
                     type: 'post',
                     data: {
                         'remId': userId

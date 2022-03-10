@@ -48,5 +48,9 @@ class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
+        date_default_timezone_set("Asia/Kolkata");
+		$this->validation  =  \Config\Services::validation();
+		$this->session = \Config\Services::session();
+		$this->db = \Config\Database::connect();
     }
 }
