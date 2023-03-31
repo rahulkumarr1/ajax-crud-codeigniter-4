@@ -1,4 +1,5 @@
-# CodeIgniter 4 Application 
+# Login and Registration Authentication in Codeigniter 4
+
 
 ## Migrations File
 
